@@ -6,7 +6,7 @@ const FolioDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/folioItems/${id}`)
+    fetch(`https://shielded-ridge-47639.herokuapp.com/folioItems/${id}`)
       .then((res) => res.json())
       .then((data) => setItem(data))
       .catch((error) => console.log(error));

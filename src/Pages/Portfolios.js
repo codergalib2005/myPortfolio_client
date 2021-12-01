@@ -6,7 +6,7 @@ const Portfolios = () => {
   const [loader, setLoader] = useState(true);
   // Fatch Items===
   useEffect(() => {
-    fetch("http://localhost:5000/folioItems")
+    fetch("https://shielded-ridge-47639.herokuapp.com/folioItems")
       .then((res) => res.json())
       .then((data) => setItems(data))
       .catch((err) => console.log(err));
