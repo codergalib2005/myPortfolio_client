@@ -1,0 +1,198 @@
+/* //////////////==folioCardContent==///////////// */
+
+.folioCard {
+  -webkit-animation: animatedPortfolioCard 1s ease-in-out;
+  -moz-animation: animatedPortfolioCard 1s ease-in-out;
+  -o-animation: animatedPortfolioCard 1s ease-in-out;
+  -ms-transition: animatedPortfolioCard 1s ease-in-out;
+  animation: animatedPortfolioCard 1s ease-in-out;
+}
+@keyframes animatedPortfolioCard {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animatedPortfolioCard {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-ms-keyframes animatedPortfolioCard {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-o-keyframes animatedPortfolioCard {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes animatedPortfolioCard {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.folioCard .folioCardContent {
+  transform: scale(0);
+  color: #fff;
+}
+.folioCard:hover .folioCardContent {
+  transform: scale(1);
+}
+.contentOverlay {
+  z-index: 100;
+  text-align: center;
+  transition: all 0.8s linear;
+}
+.contentOverlay h3,
+.contentOverlay p {
+  transform: scale(1);
+  transition: all 0.5s linear;
+}
+.contentOverlay h3:hover,
+.contentOverlay p:hover {
+  transform: scale(1.1);
+}
+.contentOverlay::after {
+  content: "";
+  position: absolute;
+  bottom: -300%;
+  left: -300%;
+  background: #e83a3ab2;
+  height: 200%;
+  width: 200%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.contentOverlay::before {
+  content: "";
+  position: absolute;
+  top: -300%;
+  right: -300%;
+  background: #e83a3ab2;
+  height: 200%;
+  width: 200%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.folioCard:hover .contentOverlay::before {
+  top: 0%;
+  right: 0%;
+}
+.folioCard:hover .contentOverlay::after {
+  left: 0%;
+  bottom: 0%;
+}
+
+/* ==//////////////////////////== */
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* /////////////////////========active ID Set=======////////////////////// */
+#active {
+  @apply bg-red-500 text-gray-50 border-red-500;
+}
+/* /////////////////////=======Header menu styes======////////////////////// */
+.animationPageOpen {
+  -webkit-animation: animationPageOpenSlowly 1s ease-in-out;
+  -moz-animation: animationPageOpenSlowly 1s ease-in-out;
+  -o-animation: animationPageOpenSlowly 1s ease-in-out;
+  -ms-transition: animationPageOpenSlowly 1s ease-in-out;
+  animation: animationPageOpenSlowly 1s ease-in-out;
+}
+@keyframes animationPageOpenSlowly {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animationPageOpenSlowly {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-ms-keyframes animationPageOpenSlowly {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-o-keyframes animationPageOpenSlowly {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes animationPageOpenSlowly {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
