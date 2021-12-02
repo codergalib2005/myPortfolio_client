@@ -29,7 +29,6 @@ const FolioDetails = () => {
     server_code_link,
     client_code_link,
     technology,
-    type,
     tools,
   } = item;
   const [overviewImg, setOverviewImg] = useState(img);
@@ -38,7 +37,7 @@ const FolioDetails = () => {
       {/* ===Needed Link=== */}
       <div className="flex items-center justify-between flex-wrap">
         {live_link ? (
-          <a
+          <a rel="noreferrer"
             className="inline-block border-2 border-gray-100 py-2 px-5 my-2 hover:text-red-500 text-gray-100 hover:border-red-500 smooth font-bold"
             href={live_link}
             target="_blank"
@@ -49,7 +48,7 @@ const FolioDetails = () => {
           ""
         )}
         {code_link ? (
-          <a
+          <a rel="noreferrer"
             className="inline-block border-2 border-gray-100 py-2 px-5 my-2 hover:text-red-500 text-gray-100 hover:border-red-500 smooth font-bold"
             href={code_link}
             target="_blank"
@@ -60,7 +59,7 @@ const FolioDetails = () => {
           ""
         )}
         {server_code_link ? (
-          <a
+          <a rel="noreferrer"
             className="inline-block border-2 border-gray-100 py-2 px-5 my-2 hover:text-red-500 text-gray-100 hover:border-red-500 smooth font-bold"
             href={server_code_link}
             target="_blank"
@@ -71,7 +70,7 @@ const FolioDetails = () => {
           ""
         )}
         {client_code_link ? (
-          <a
+          <a rel="noreferrer"
             className="inline-block border-2 border-gray-100 py-2 px-5 my-2 hover:text-red-500 text-gray-100 hover:border-red-500 smooth font-bold"
             href={client_code_link}
             target="_blank"
@@ -198,7 +197,7 @@ const FolioDetails = () => {
       <div className="px-2 text-center">
         <h1 className="text-red-400 text-3xl font-bold smooth transform scale-100 hover:scale-105" >Have a Project for Me? </h1>
         <h3 className="text-gray-100 hover:text-red-400 text-2xl smooth transform scale-100 hover:scale-105" >GET IN TOUCH!</h3>
-        <Link path="/contact" className="text-gray-100 border-2 border-gray-100 inline-block py-2 px-6 mt-4 hover:text-red-400 hover:border-red-400 smooth">Contact Me</Link>
+        <Link to="/contact" className="text-gray-100 border-2 border-gray-100 inline-block py-2 px-6 mt-4 hover:text-red-400 hover:border-red-400 smooth">Contact Me</Link>
       </div>
     </div>
   );

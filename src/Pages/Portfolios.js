@@ -21,7 +21,7 @@ const Portfolios = () => {
     item.type.toLowerCase().includes(type.toLowerCase())
   );
   return (
-    <div style={{ minHeight: "90vh" }} className="bg-black">
+    <div style={{ minHeight: "90vh" }}>
       {/* ===========Buttons=========== */}
       <div className="container mx-auto flex items-center flex-wrap justify-center mt-10">
         <button
@@ -86,7 +86,7 @@ const Portfolios = () => {
               Not items available
             </h1>
           ))}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-6 px-5">
           {!findItems.length == 0 &&
             findItems.map((findItem) => (
               <Portfolio key={findItem._id} findItem={findItem} />

@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div>
       <div
-        className="container mx-auto py-10 text-center sm:text-left text-white sm:flex flex-wrap items-center justify-between px-4"
+        className="container mx-auto py-10 text-center sm:text-left text-white sm:flex flex-wrap items-center justify-between px-7"
         style={{ minHeight: "90vh" }}
       >
         <div className="w-full sm:w-6/12">
-          <h1 className="font-black transform scale-100 hover:scale-105 smooth text-gray-100 hover:text-red-500 smooth text-6xl ">
+          <h1 className="font-black transform scale-100 hover:scale-105 smooth text-gray-100 hover:text-red-500 smooth text-4xl sm:text-6xl ">
             I'm Asadullah Hil Galib
           </h1>
           <p className="font-bold text-2xl py-4 transform scale-100 hover:scale-105 smooth  text-gray-100 hover:text-red-500 smooth">
