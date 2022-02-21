@@ -8377,6 +8377,22 @@ portfinder@^1.0.26:
     debug "^3.1.1"
     mkdirp "^0.5.5"
 
+portfolio@./:
+  version "0.1.0"
+  dependencies:
+    "@craco/craco" "^6.4.2"
+    "@formspree/react" "^2.2.4"
+    "@testing-library/jest-dom" "^5.11.4"
+    "@testing-library/react" "^11.1.0"
+    "@testing-library/user-event" "^12.1.10"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-icons "^4.3.1"
+    react-router-dom "5"
+    react-scripts "4.0.3"
+    sweetalert "^2.1.2"
+    web-vitals "^1.0.1"
+
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
