@@ -1,11 +1,26 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      minHeight: {
+        300: "300px",
+        100: "100px",
+      },
+      height: {
+        100: "100px",
+        150: "150px",
+        200: "200px",
+        300: "300px",
+        400: "400px",
+        500: "500px",
+        600: "600px",
+        700: "700px",
+      },
+      maxHeight: {
+        700: "700px",
+      },
+    },
   },
   plugins: [],
-}
+};

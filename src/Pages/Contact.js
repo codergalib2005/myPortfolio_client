@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
     <div style={contactPageStyle}>
-      <div className="container py-14 mx-auto px-5">
+      <div className="container py-14 mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           <div className="bg-red-500 hover:bg-red-400 smooth rounded-xl h-48 grid items-center justify-center text-center">
             <div>

@@ -3,12 +3,12 @@ import React from "react";
 const Services = () => {
   return (
     <div className="text-red-50">
-      <div className="container mx-auto px-3 text-center">
+      <div className="container mx-auto px-6 text-center">
         <h1 className="text-gray-50 text-4xl font-bold hover:text-red-500 transform scale-100 hover:scale-105 smooth">
           MY SERVICES
         </h1>
       </div>
-      <div className="container py-10 mx-auto px-4 grid grid-cols-1 sm:grid-cols-2">
+      <div className="container py-10 mx-auto px-6 grid grid-cols-1 sm:grid-cols-2">
         <div className=" sm:border-r-2 sm:border-red-500 flex items-center flex-col" style={{minHeight: '500px'}}>
           {/* ====//Services Item//===== */}
           <div className="flex items-center justify-center p-10 bg-gray-700 m-5 " style={{minHeight: '200px'}}>

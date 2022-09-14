@@ -1,6 +1,6 @@
 {
   // Theme
-  "workbench.colorTheme": "Shades of Purple",
+  "workbench.colorTheme": "Learn with Sumit Official Theme",
 
   // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",

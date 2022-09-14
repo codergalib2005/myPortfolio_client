@@ -5,16 +5,22 @@
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@formspree/react": "^2.2.4",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "autoprefixer": "^9.8.8",
     "portfolio": "./",
+    "postcss": "^7.0.39",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-redux": "^8.0.2",
     "react-router-dom": "5",
     "react-scripts": "4.0.3",
     "sweetalert": "^2.1.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -42,8 +48,9 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9",
-    "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.7"
   }
 }

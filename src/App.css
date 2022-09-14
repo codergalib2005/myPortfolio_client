@@ -201,7 +201,7 @@
 .spinner {
   width: 80px;
   height: 80px;
-  background: url(./images/galib-round.jpg) center center no-repeat;
+  background: url(./assets/galib-round.jpg) center center no-repeat;
   background-size: cover;
 
   margin: 100px auto;

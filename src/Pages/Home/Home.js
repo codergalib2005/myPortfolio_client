@@ -1,11 +1,11 @@
 import React from "react";
+import bannerGalib from "../../assets/galib.png";
 import resume from "../../Download/resume.pdf";
-import bannerGalib from "../../images/galib.png";
 const Home = () => {
   return (
     <div>
       <div
-        className="container mx-auto py-10 text-center sm:text-left text-white sm:flex flex-wrap items-center justify-between px-7"
+        className="container mx-auto py-10 text-center sm:text-left text-white sm:flex flex-wrap items-center justify-between px-6"
         style={{ minHeight: "90vh" }}
       >
         <div className="w-full sm:w-6/12">

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = ({ openMmenu, setOpenMenu }) => {
   return (
     <div>
-      <div className="container mx-auto px-2 flex justify-between items-center py-6">
+      <div className="container mx-auto px-6 flex justify-between items-center py-6">
         <div>
           <Link to="/">
             <div className="w-12 h-12 border-2 border-gray-50 flex items-center justify-center cursor-pointer hover:border-red-400 transform scale-100 smooth hover:scale-105">

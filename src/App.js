@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import laptopImg from "./images/laptop.jpg";
-import openBannerImg from './images/open-banner.png';
+import laptopImg from "./assets/laptop.jpg";
+import openBannerImg from "./assets/open-banner.png";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
@@ -17,13 +17,12 @@ import Menu from "./Shared/Menu";
 const mainBackgorund = {
   minHeight: "100vh",
   background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${laptopImg}) top left no-repeat`,
-  backgroundAttachment: 'fixed'
+  backgroundAttachment: "fixed",
 };
 const openPageStyle = {
   background: ` linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url(${openBannerImg}) center center no-repeat`,
-  backgroundSize: 'cover'
-
-}
+  backgroundSize: "cover",
+};
 const App = () => {
   const [openMmenu, setOpenMenu] = useState(false);
   const [openSpinner, setOpenSpinner] = useState(true);
@@ -36,7 +35,10 @@ const App = () => {
   return (
     <>
       {openSpinner ? (
-        <div className="flex items-center justify-center min-h-screen" style={openPageStyle}>
+        <div
+          className="flex items-center justify-center min-h-screen"
+          style={openPageStyle}
+        >
           <div class="spinner"></div>
         </div>
       ) : (
@@ -64,7 +66,7 @@ const App = () => {
                     <Portfolios />
                   </div>
                 </Route>
-                <Route path="/portfolios/:id">
+                <Route path="/portfolios/:portfolioId">
                   <div className="animationPageOpen">
                     <FolioDetails />
                   </div>
