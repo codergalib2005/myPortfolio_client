@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import laptopImg from "./assets/laptop.jpg";
-import openBannerImg from "./assets/open-banner.png";
+import Dashboard from "./Dashboard";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
@@ -20,8 +20,9 @@ const mainBackgorund = {
   backgroundAttachment: "fixed",
 };
 const openPageStyle = {
-  background: ` linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url(${openBannerImg}) center center no-repeat`,
-  backgroundSize: "cover",
+  minHeight: "100vh",
+  background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${laptopImg}) top left no-repeat`,
+  backgroundAttachment: "fixed",
 };
 const App = () => {
   const [openMmenu, setOpenMenu] = useState(false);
@@ -39,7 +40,7 @@ const App = () => {
           className="flex items-center justify-center min-h-screen"
           style={openPageStyle}
         >
-          <div class="spinner"></div>
+          <div class="spinner text-8xl font-bold rounded text-gray-100 bg-black border-8 border-gray-50 ">G</div>
         </div>
       ) : (
         <div className="min-h-screen animationPageOpen" style={mainBackgorund}>
@@ -90,6 +91,9 @@ const App = () => {
                   <div className="animationPageOpen">
                     <Blog />
                   </div>
+                </Route>
+                <Route path="/personal/dashboard">
+                  <Dashboard />
                 </Route>
                 <Route path="*">
                   <div className="animationPageOpen">
