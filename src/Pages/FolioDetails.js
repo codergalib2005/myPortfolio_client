@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Loader from "../components/FolioDetails/Loader";
 import Main from "../components/FolioDetails/Main";
+import Relative from "../components/FolioDetails/Relative";
 import HaierMe from "../components/HaierMe";
 import { useGetAPortfolioQuery } from "../features/api/apiSlice";
 import Message from "../ui/Message";
@@ -30,7 +31,11 @@ const FolioDetails = () => {
   return (
     <div>
       <div className="container mx-auto px-6 py-8">
-        {content} <HaierMe />
+        {content}
+        <div>
+          <Relative />
+        </div>
+        <HaierMe />
       </div>
     </div>
   );
