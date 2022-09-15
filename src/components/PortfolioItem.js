@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const PortfolioItem = ({ item }) => {
+const PortfolioItem = ({ item, }) => {
   const { name, images, description, _id } = item || {};
   return (
     <div className="folioCard overflow-hidden h-96 transform scale-100 hover:scale-105 smooth relative smooth border-4 border-gray-100">

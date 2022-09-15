@@ -10,10 +10,11 @@ const keyword = [
   "scss",
   "nextjs",
 ];
-const FilterButton = () => {
+const FilterButton = ({ current, setCurrent }) => {
   const [active, setActive] = useState("All");
-  const handler = (current) => {
-    setActive(current);
+  const handler = (select) => {
+    setActive(select);
+    setCurrent(select);
   };
 
   return (

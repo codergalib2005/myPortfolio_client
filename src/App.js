@@ -8,6 +8,7 @@ import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import FolioDetails from "./Pages/FolioDetails";
 import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login";
 import Not from "./Pages/Not";
 import Portfolios from "./Pages/Portfolios";
 import Services from "./Pages/Services";
@@ -32,6 +33,7 @@ const App = () => {
       setOpenSpinner(false);
     }, 4000);
   }, []);
+  const auth = localStorage.getItem("portfolio");
 
   return (
     <>
@@ -40,7 +42,9 @@ const App = () => {
           className="flex items-center justify-center min-h-screen"
           style={openPageStyle}
         >
-          <div class="spinner text-8xl font-bold rounded text-gray-100 bg-black border-8 border-gray-50 ">G</div>
+          <div class="spinner text-8xl font-bold rounded text-gray-100 bg-black border-8 border-gray-50 ">
+            G
+          </div>
         </div>
       ) : (
         <div className="min-h-screen animationPageOpen" style={mainBackgorund}>
@@ -92,9 +96,15 @@ const App = () => {
                     <Blog />
                   </div>
                 </Route>
-                <Route path="/personal/dashboard">
-                  <Dashboard />
-                </Route>
+                {auth === "coderboygalif@gmail.com" ? (
+                  <Route path="/personal/dashboard">
+                    <Dashboard />
+                  </Route>
+                ) : (
+                  <Route path="/login">
+                    <Login />
+                  </Route>
+                )}
                 <Route path="*">
                   <div className="animationPageOpen">
                     <Not />

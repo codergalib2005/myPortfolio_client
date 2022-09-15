@@ -11,6 +11,9 @@ export const apiSlice = createApi({
     getPortfolios: builder.query({
       query: () => "/projects",
     }),
+    getRandomProject: builder.query({
+      query: () => `/projects/random`,
+    }),
     getAPortfolio: builder.query({
       query: (id) => `/projects/${id}`,
     }),
@@ -29,4 +32,5 @@ export const {
   useGetPortfoliosQuery,
   useGetAPortfolioQuery,
   useAddProjectMutation,
+  useGetRandomProjectQuery,
 } = apiSlice;
