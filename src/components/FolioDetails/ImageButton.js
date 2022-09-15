@@ -5,8 +5,8 @@ const ImageButton = ({ image, setCurrentImage }) => {
     setCurrentImage(image);
   };
   return (
-    <div className="h-150 overflow-hidden" onClick={handleSet}>
-      <img src={image} alt="" />
+    <div className="h-100 overflow-hidden mb-3 rounded-md border-4 cursor-pointer border-gray-50" onClick={handleSet}>
+      <img className="w-full min-h-full" src={image} alt="" />
     </div>
   );
 };

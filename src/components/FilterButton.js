@@ -1,57 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 
+const keyword = [
+  "html",
+  "css",
+  "react",
+  "tailwind",
+  "material-ui",
+  "ant-design",
+  "scss",
+  "nextjs",
+];
 const FilterButton = () => {
+  const [active, setActive] = useState("All");
+  const handler = (current) => {
+    setActive(current);
+  };
+
   return (
-    <div>
-      {/* <button
-        id={type === "all" && "active"}
-        onClick={() => setType("all")}
-        className="text-gray-100 py-2 px-5 font-bold hover:text-red-500 smooth border border-gray-100 hover:border-red-500 mx-1 mt-2"
+    <div className="w-full flex items-center justify-center mb-8 px-8 flex-wrap">
+      <button
+        onClick={() => handler("All")}
+        className={` py-2 px-5 font-bold smooth border-2  mx-1 mt-2 ${
+          active === "All"
+            ? "bg-red-500 text-white hover:bg-red-400 border-red-500"
+            : "text-gray-100 hover:text-red-500 border-gray-100 hover:border-red-500"
+        }`}
       >
         All
       </button>
-      <button
-        id={type === "react" && "active"}
-        onClick={() => setType("react")}
-        className="text-gray-100 py-2 px-5 font-bold hover:text-red-500 smooth border border-gray-100 hover:border-red-500 mx-1 mt-2"
-      >
-        React
-      </button>
-      <button
-        id={type === "html" && "active"}
-        onClick={() => setType("html")}
-        className="text-gray-100 py-2 px-5 font-bold hover:text-red-500 smooth border border-gray-100 hover:border-red-500 mx-1 mt-2"
-      >
-        HTML
-      </button>
-      <button
-        id={type === "javascript" && "active"}
-        onClick={() => setType("javascript")}
-        className="text-gray-100 py-2 px-5 font-bold hover:text-red-500 smooth border border-gray-100 hover:border-red-500 mx-1 mt-2"
-      >
-        Javascript
-      </button>
-      <button
-        id={type === "bootstrap" && "active"}
-        onClick={() => setType("bootstrap")}
-        className="text-gray-100 py-2 px-5 font-bold hover:text-red-500 smooth border border-gray-100 hover:border-red-500 mx-1 mt-2"
-      >
-        Bootstrap
-      </button>
-      <button
-        id={type === "tailwind" && "active"}
-        onClick={() => setType("tailwind")}
-        className="text-gray-100 py-2 px-5 font-bold hover:text-red-500 smooth border border-gray-100 hover:border-red-500 mx-1 mt-2"
-      >
-        Tailwind
-      </button>
-      <button
-        id={type === "material" && "active"}
-        onClick={() => setType("material")}
-        className="text-gray-100 py-2 px-5 font-bold hover:text-red-500 smooth border border-gray-100 hover:border-red-500 mx-1 mt-2"
-      >
-        Material
-      </button> */}
+      {keyword.map((item, index) => (
+        <button
+          onClick={() => handler(item)}
+          key={index}
+          className={` py-2 px-5 font-bold smooth border-2  mx-1 mt-2 ${
+            active === item
+              ? "bg-red-500 text-white hover:bg-red-400 border-red-500"
+              : "text-gray-100 hover:text-red-500 border-gray-100 hover:border-red-500"
+          }`}
+        >
+          {item.toLocaleUpperCase()}
+        </button>
+      ))}
     </div>
   );
 };

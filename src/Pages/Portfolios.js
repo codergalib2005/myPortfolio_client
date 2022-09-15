@@ -1,5 +1,6 @@
 import React from "react";
 import CardLoad from "../components/CardLoad";
+import FilterButton from "../components/FilterButton";
 import PortfolioItem from "../components/PortfolioItem";
 import { useGetPortfoliosQuery } from "../features/api/apiSlice";
 import Message from "../ui/Message";
@@ -48,7 +49,10 @@ const Portfolios = () => {
   return (
     <div style={{ minHeight: "90vh" }}>
       {/* ===========Buttons=========== */}
-      <div className="container mx-auto px-6 py-10">{content}</div>
+      <div className="container mx-auto px-6 py-10">
+        <FilterButton />
+        {content}
+      </div>
     </div>
   );
 };
