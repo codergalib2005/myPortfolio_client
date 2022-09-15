@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from "react";
 
-const AddBenefits = ({ state, dispatch }) => {
+const AddTools = ({ state, dispatch }) => {
   const [duplicats, setDuplicats] = useState(false);
   const [input, setInput] = useState("");
   useEffect(() => {
-    if (state.benefits.includes(input)) {
+    if (state.tools.includes(input)) {
       setDuplicats(true);
     } else {
       setDuplicats(false);
     }
-  }, [input, state.benefits]);
+  }, [input, state.tools]);
   const handleAdd = () => {
     if (!duplicats && input) {
-      dispatch({ type: "ADD_BENEFITS", payload: input });
+      dispatch({ type: "ADD_TOOLS", payload: input });
       setInput("");
     }
   };
   return (
     <div class="my-5">
       <ul className="flex list-disc pl-4 flex-wrap">
-        {state.benefits.map((item, index) => (
+        {state.tools.map((item, index) => (
           <li
-            onClick={() => dispatch({ type: "REMOVE_BENEFITS", payload: item })}
+            onClick={() => dispatch({ type: "REMOVE_TOOLS", payload: item })}
             className="text-gray-300 ml-6"
             key={index}
           >
@@ -34,7 +34,7 @@ const AddBenefits = ({ state, dispatch }) => {
           className="flex font-bold items-center text-gray-400"
           htmlFor="project_name"
         >
-          Project Benefit
+          Project Tools
         </label>
         <div className="flex items-center my-2">
           <input
@@ -44,7 +44,7 @@ const AddBenefits = ({ state, dispatch }) => {
             type="text"
             id="success"
             class="bg-transparent border-2 border-gray-500 text-green-600 placeholder-gray-500 text-sm rounded focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:border-green-500 mr-2"
-            placeholder="Type Benefits..."
+            placeholder="Type Tools..."
           />
           <button
             onClick={handleAdd}
@@ -77,4 +77,4 @@ const AddBenefits = ({ state, dispatch }) => {
   );
 };
 
-export default AddBenefits;
+export default AddTools;

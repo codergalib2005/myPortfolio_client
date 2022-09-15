@@ -3,12 +3,13 @@ import Details from "./Details";
 import Images from "./Images";
 
 const Main = ({ product }) => {
-  const { name, description, links, benefits, tools, technology } = product;
+  const { images, name, description, links, benefits, tools, technology } =
+    product;
   return (
     <div>
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-8">
-          <Images />
+          <Images images={images} />
         </div>
         <div className="col-span-4">
           <Details

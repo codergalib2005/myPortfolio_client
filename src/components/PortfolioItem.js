@@ -8,7 +8,7 @@ const PortfolioItem = ({ item }) => {
       <img className="width-full" src={images[0]} alt={name} />
       <div className="folioCardContent absolute top-0 left-0 w-full h-full p-5 flex items-center justify-center flex-col smooth">
         <div className="contentOverlay">
-          <h3 className="text-gray-100 text-3xl">{name}</h3>
+          <h3 className="text-gray-100 text-3xl">{name?.slice(0,20)}</h3>
           <p className="text-gray-100 text-base">
             {description?.substring(0, 100)}
           </p>

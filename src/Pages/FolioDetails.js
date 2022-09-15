@@ -26,6 +26,7 @@ const FolioDetails = () => {
       </>
     );
   }
+  console.log(product);
   return (
     <div>
       <div className="container mx-auto px-6 py-8">

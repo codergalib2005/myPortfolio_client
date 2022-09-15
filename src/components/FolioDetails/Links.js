@@ -7,6 +7,8 @@ const Links = ({ links }) => {
       {server && (
         <a
           href={server}
+          target="_blank"
+          rel="noreferrer"
           className="text-gray-100 border-2 border-gray-100 text-base py-3 px-4 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500"
         >
           Server Code
@@ -15,6 +17,8 @@ const Links = ({ links }) => {
       {live && (
         <a
           href={live}
+          target="_blank"
+          rel="noreferrer"
           className="text-gray-100 border-2 border-gray-100 text-base py-3 px-4 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500"
         >
           Live Side
@@ -23,6 +27,8 @@ const Links = ({ links }) => {
       {client && (
         <a
           href={client}
+          target="_blank"
+          rel="noreferrer"
           className="text-gray-100 border-2 border-gray-100 text-base py-3 px-4 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500"
         >
           Client Code

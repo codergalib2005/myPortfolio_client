@@ -5,18 +5,28 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://my-portfolio-server-one.vercel.app/api",
   }),
-  tagTypes: ["FolioItems"],
+  tagTypes: ["Projects"],
   endpoints: (builder) => ({
     // Get All Portfolios
     getPortfolios: builder.query({
       query: () => "/projects",
-      providesTags: ["FolioItems"],
     }),
     getAPortfolio: builder.query({
       query: (id) => `/projects/${id}`,
+    }),
+    addProject: builder.mutation({
+      query: (body) => ({
+        url: "/projects",
+        method: "POST",
+        body: body,
+      }),
     }),
   }),
 });
 
 // Export all handler
-export const { useGetPortfoliosQuery, useGetAPortfolioQuery } = apiSlice;
+export const {
+  useGetPortfoliosQuery,
+  useGetAPortfolioQuery,
+  useAddProjectMutation,
+} = apiSlice;
