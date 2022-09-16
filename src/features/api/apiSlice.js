@@ -24,6 +24,18 @@ export const apiSlice = createApi({
         body: body,
       }),
     }),
+    getToolsSkills: builder.query({
+      query: () => `/skills/tools`,
+    }),
+    getStructureSkills: builder.query({
+      query: () => `/skills/structure`,
+    }),
+    getDesignSkills: builder.query({
+      query: () => `/skills/design`,
+    }),
+    getBackendSkills: builder.query({
+      query: () => `/skills/backend`,
+    }),
   }),
 });
 
@@ -33,4 +45,8 @@ export const {
   useGetAPortfolioQuery,
   useAddProjectMutation,
   useGetRandomProjectQuery,
+  useGetBackendSkillsQuery,
+  useGetDesignSkillsQuery,
+  useGetStructureSkillsQuery,
+  useGetToolsSkillsQuery,
 } = apiSlice;

@@ -1,0 +1,87 @@
+[
+  {
+    "name": "HTML",
+    "type": "structure"
+  },
+  {
+    "name": "javascript",
+    "type": "structure"
+  },
+
+  {
+    "name": "React",
+    "type": "structure"
+  },
+  {
+    "name": "RTK-query / Redux",
+    "type": "structure"
+  },
+  {
+    "name": "Nextjs",
+    "type": "structure"
+  },
+  {
+    "name": "Nodejs",
+    "type": "backend"
+  },
+  {
+    "name": "Expressjs",
+    "type": "backend"
+  },
+  {
+    "name": "Mongodb",
+    "type": "backend"
+  },
+  {
+    "name": "Mongoose",
+    "type": "backend"
+  },
+  {
+    "name": "css",
+    "type": "design"
+  },
+  {
+    "name": "bootstrap",
+    "type": "design"
+  },
+  {
+    "name": "tailwind",
+    "type": "design"
+  },
+  {
+    "name": "material-ui",
+    "type": "design"
+  },
+  {
+    "name": "ant-design",
+    "type": "design"
+  },
+  {
+    "name": "Styled Component",
+    "type": "design"
+  },
+  {
+    "name": "VScode",
+    "type": "tools"
+  },
+  {
+    "name": "Github",
+    "type": "tools"
+  },
+  {
+    "name": "Git",
+    "type": "tools"
+  },
+  {
+    "name": "Firebase",
+    "type": "tools"
+  },
+  {
+    "name": "Vercel",
+    "type": "tools"
+  },
+  {
+    "name": "Postman",
+    "type": "tools"
+  }
+]

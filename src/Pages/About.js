@@ -9,6 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import galib2Image from "../assets/galib.png";
 import Certificates from "../components/About/Certificates";
+import Skills from "../components/About/Skills";
 import { position } from "../fakeData/string";
 
 const About = () => {
@@ -93,6 +94,9 @@ const About = () => {
             Hire Me
           </Link>
         </div>
+      </div>
+      <div className="container mx-auto px-6">
+        <Skills />
       </div>
       <div className="container mx-auto px-6">
         <Certificates />
