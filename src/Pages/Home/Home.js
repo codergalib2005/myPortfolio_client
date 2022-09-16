@@ -1,6 +1,7 @@
 import React from "react";
 import bannerGalib from "../../assets/galib.png";
 import resume from "../../Download/resume.pdf";
+import { position } from "../../fakeData/string";
 const Home = () => {
   return (
     <div>
@@ -13,7 +14,7 @@ const Home = () => {
             I'm Asadullah Hil Galib
           </h1>
           <p className="font-bold text-2xl py-4 transform scale-100 hover:scale-105 smooth  text-gray-50 hover:text-red-400 smooth">
-            I'm a Front end developer
+            I'm a {position}
           </p>
           <a
             href={resume}
@@ -24,9 +25,12 @@ const Home = () => {
           </a>
         </div>
         <div className="w-full sm:w-6/12 text-center mt-12 sm:mt-0 px-4 sm:px-0">
-          <div className="border-2 py-10 transform scale-100 hover:scale-105 smooth ml-auto border-gray-50 hover:border-red-400 w-full sm:w-3/4">
+          <div
+            className="transition-all duration-300 ease-linear hover:border-red-400 cursor-help flex justify-center filter backdrop-filter backdrop-contrast-50 mx-auto w-full p-6 border-4 border-gray-300 rounded-lg overflow-hidden"
+            style={{ maxWidth: "550px" }}
+          >
             <img
-              className="w-3/4 m-auto transform scale-100 hover:scale-105 smooth"
+              className="transition-all duration-300 ease-linear image-border rounded-lg w-full border-4 border-gray-300 transform scale-100 hover:scale-105 cursor-not-allowe filter sepia hover:filter-none cusrom-drop-shadow"
               src={bannerGalib}
               alt=""
             />

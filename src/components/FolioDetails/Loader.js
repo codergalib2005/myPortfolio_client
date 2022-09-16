@@ -21,7 +21,7 @@ const Loader = () => {
       role="status"
       class="p-4 rounded border border-gray-200 shadow animate-pulse md:p-6 dark:border-gray-700 grid grid-cols-12 gap-6"
     >
-      <div className="col-span-8 grid grid-cols-12 gap-4">
+      <div className="col-span-12 lg:col-span-8 grid grid-cols-12 gap-4">
         <div className="col-span-10">
           <div class="flex justify-center items-center mb-4 bg-gray-300 rounded dark:bg-gray-700 h-700">
             <svg
@@ -54,7 +54,7 @@ const Loader = () => {
           ))}
         </div>
       </div>
-      <div className="col-span-4">
+      <div className="col-span-12 lg:col-span-4">
         <div className="flex items-center justify-between">
           <div class="h-12 bg-gray-200 rounded dark:bg-gray-700 w-28 mb-2.5"></div>
           <div class="h-12 bg-gray-200 rounded dark:bg-gray-700 w-28 mb-2.5"></div>

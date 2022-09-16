@@ -9,7 +9,7 @@ const Links = ({ links }) => {
           href={server}
           target="_blank"
           rel="noreferrer"
-          className="text-gray-100 border-2 border-gray-100 text-base py-3 px-4 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500"
+          className="text-gray-100 border-2 border-gray-100 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500  xl:text-base py-2 px-2 text-sm xl:py-3  xl:px-4 "
         >
           Server Code
         </a>
@@ -19,7 +19,7 @@ const Links = ({ links }) => {
           href={live}
           target="_blank"
           rel="noreferrer"
-          className="text-gray-100 border-2 border-gray-100 text-base py-3 px-4 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500"
+          className="text-gray-100 border-2 border-gray-100 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500  xl:text-base py-2 px-2 text-sm xl:py-3  xl:px-4 "
         >
           Live Side
         </a>
@@ -29,7 +29,7 @@ const Links = ({ links }) => {
           href={client}
           target="_blank"
           rel="noreferrer"
-          className="text-gray-100 border-2 border-gray-100 text-base py-3 px-4 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500"
+          className="text-gray-100 border-2 border-gray-100 rounded hover:border-red-500 hover:text-red-500 transtion-all easy-linear duration-500  xl:text-base py-2 px-2 text-sm xl:py-3  xl:px-4 "
         >
           Client Code
         </a>

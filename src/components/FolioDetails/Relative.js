@@ -37,10 +37,10 @@ export default function Relative() {
   } else if (!isLoading && !isError && items.length > 0) {
     content = (
       <Swiper
-        slidesPerView={4}
+        slidesPerView={1}
         spaceBetween={20}
         breakpoints={{
-          640: {
+          440: {
             slidesPerView: 2,
             spaceBetween: 20,
           },

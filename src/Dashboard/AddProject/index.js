@@ -79,6 +79,8 @@ const AddProject = () => {
       technology: state.technology,
     });
   };
+  console.log("Error : " + error);
+  console.log("Success : " + isSuccess);
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -129,7 +131,7 @@ const AddProject = () => {
                 <div>
                   <label
                     htmlFor="live"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    class="block mb-2 text-sm font-medium dark:text-gray-300 text-gray-300 mt-4"
                   >
                     Live Website
                   </label>
@@ -146,7 +148,7 @@ const AddProject = () => {
                 <div>
                   <label
                     htmlFor="server"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    class="block mb-2 text-sm font-medium dark:text-gray-300 text-gray-300 mt-4"
                   >
                     Server Code URL
                   </label>
@@ -162,7 +164,7 @@ const AddProject = () => {
                 <div>
                   <label
                     htmlFor="client"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    class="block mb-2 text-sm font-medium dark:text-gray-300 text-gray-300 mt-4"
                   >
                     Client Code URL
                   </label>

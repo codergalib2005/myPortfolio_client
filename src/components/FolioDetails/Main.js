@@ -8,10 +8,10 @@ const Main = ({ product }) => {
   return (
     <div>
       <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-8">
+        <div className="col-span-12 lg:col-span-8">
           <Images images={images} />
         </div>
-        <div className="col-span-4">
+        <div className="col-span-12 lg:col-span-4">
           <Details
             name={name}
             tools={tools}
