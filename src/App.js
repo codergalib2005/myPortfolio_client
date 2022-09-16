@@ -5,6 +5,7 @@ import laptopImg from "./assets/laptop.jpg";
 import Dashboard from "./Dashboard";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
+import BlogDetails from "./Pages/BlogDetails";
 import Contact from "./Pages/Contact";
 import FolioDetails from "./Pages/FolioDetails";
 import Home from "./Pages/Home/Home";
@@ -94,6 +95,11 @@ const App = () => {
                 <Route path="/blog">
                   <div className="animationPageOpen">
                     <Blog />
+                  </div>
+                </Route>
+                <Route path="/blogd/:blogId">
+                  <div className="animationPageOpen">
+                    <BlogDetails />
                   </div>
                 </Route>
                 {auth === "coderboygalif@gmail.com" ? (

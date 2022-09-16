@@ -1,7 +1,9 @@
 import React from "react";
+import { BsLinkedin } from "react-icons/bs";
 import bannerGalib from "../../assets/galib.png";
 import resume from "../../Download/resume.pdf";
 import { position } from "../../fakeData/string";
+
 const Home = () => {
   return (
     <div>
@@ -11,18 +13,28 @@ const Home = () => {
       >
         <div className="w-full sm:w-6/12">
           <h1 className="font-black transform scale-100 hover:scale-105 smooth text-gray-50 hover:text-red-400 smooth text-4xl sm:text-6xl ">
-            I'm Asadullah Hil Galib
+            Hi! I'm Asadullah Hil Galib
           </h1>
           <p className="font-bold text-2xl py-4 transform scale-100 hover:scale-105 smooth  text-gray-50 hover:text-red-400 smooth">
             I'm a {position}
           </p>
-          <a
-            href={resume}
-            download
-            className="inline-block py-2 px-6 border-2 border-gray-50 text-gray-50 hover:text-red-400 hover:border-red-400 font-bold mt-3 transform scale-105 hover:scale-110 smooth"
-          >
-            Download resume
-          </a>
+          <div className="flex items-stretch justify-center sm:justify-start ">
+            <a
+              href={resume}
+              download
+              className="inline-block py-2 px-6 border-2 border-gray-50 text-gray-50 hover:text-red-400 hover:border-red-400 font-bold transform scale-105 hover:scale-110 smooth"
+            >
+              Download resume
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="py-2 px-3 border-2 border-gray-50 text-gray-50 hover:text-red-400 hover:border-red-400 font-bold transform scale-105 hover:scale-110 smooth ml-5 flex items-center justify-center"
+              href="https://www.linkedin.com/in/codergalib/"
+            >
+              <BsLinkedin />
+            </a>
+          </div>
         </div>
         <div className="w-full sm:w-6/12 text-center mt-12 sm:mt-0 px-4 sm:px-0">
           <div

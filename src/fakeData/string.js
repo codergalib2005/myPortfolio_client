@@ -1,1 +1,1 @@
-export const position = "Mern Stack Developer.";
+export const position = " Mern Stack Developer. ";

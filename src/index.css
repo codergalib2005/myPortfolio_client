@@ -109,7 +109,7 @@ code {
   @apply transform scale-100 hover:scale-105 hover:text-red-400 transition-all duration-500 ease-linear;
 }
 
-.image-border {
+.text-border {
   -webkit-text-stroke: 2px #e83a3b;
   /* filter: grayscale(100); */
 }

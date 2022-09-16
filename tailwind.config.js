@@ -23,6 +23,11 @@ module.exports = {
       width: {
         100: "100px",
       },
+      colors: {
+        dark: "#2b2b36",
+        secondary: "#ffc107",
+        "secondary-deep": "orange",
+      },
     },
   },
   plugins: [],

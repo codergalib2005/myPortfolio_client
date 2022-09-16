@@ -2,13 +2,22 @@ import { useForm, ValidationError } from "@formspree/react";
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdLocationOn, MdOutlineMailOutline } from "react-icons/md";
+import swal from "sweetalert";
+
 const contactPageStyle = {
   minHeight: "90vh",
   backgroundSize: "cover",
 };
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xbjwrkvn");
+  const [state, handleSubmit] = useForm("xdojezqa");
+  if (state.succeeded) {
+    swal(
+      "Thanks for contract!",
+      "Galib Mail send successfully!!",
+      "success"
+    );
+  }
 
   return (
     <div style={contactPageStyle}>
