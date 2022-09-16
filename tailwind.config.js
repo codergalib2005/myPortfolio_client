@@ -27,6 +27,7 @@ module.exports = {
         dark: "#2b2b36",
         secondary: "#ffc107",
         "secondary-deep": "orange",
+        overlay: "rgba(0, 0, 0, 0.8)",
       },
     },
   },

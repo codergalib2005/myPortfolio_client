@@ -116,3 +116,16 @@ code {
 .cusrom-drop-shadow {
   filter: drop-shadow(8px 8px 0px #e83a3b);
 }
+.certificate-card .certificate-card-body {
+  opacity: 0;
+  scale: 0.5;
+  visibility: hidden;
+  transition: all 0.3s linear;
+  border-radius: 30px;
+}
+.certificate-card:hover .certificate-card-body {
+  opacity: 1;
+  scale: 1;
+  visibility: visible;
+  border-radius: 0px;
+}
