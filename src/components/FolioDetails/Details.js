@@ -7,7 +7,7 @@ const Details = ({ name, description, links, benefits, tools, technology }) => {
   return (
     <div>
       <Helmet>
-        <title>Asadullah {name}</title>
+        <title>Asadullah - {name}</title>
         <meta name="description" content={`${description}`} />
         <meta
           name="keyword"
@@ -15,8 +15,9 @@ const Details = ({ name, description, links, benefits, tools, technology }) => {
         />
         <link
           rel="canonical"
-          href={`https://happy-snyder-173398.netlify.app`}
+          href={`https://happy-snyder-173398.netlify.app/portfolio`}
         />
+        
       </Helmet>
       <Links links={links} />
       <div>

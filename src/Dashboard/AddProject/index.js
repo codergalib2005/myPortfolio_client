@@ -79,8 +79,6 @@ const AddProject = () => {
       technology: state.technology,
     });
   };
-  console.log("Error : " + error);
-  console.log("Success : " + isSuccess);
   return (
     <div>
       <form onSubmit={handleSubmit}>

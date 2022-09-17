@@ -7,7 +7,7 @@ const PortfolioItem = ({ item }) => {
   return (
     <div className="folioCard overflow-hidden h-96 transform scale-100 hover:scale-105 smooth relative smooth border-4 border-gray-100">
       <Helmet>
-        <title>{name}</title>
+        {/* <title>{name}</title>  */}
         <meta name="description" content={`${description}`} />
         <meta
           name="keyword"

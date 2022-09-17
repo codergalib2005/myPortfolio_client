@@ -4,8 +4,8 @@ import Details from "./Details";
 import Images from "./Images";
 
 const Main = ({ product }) => {
-  const { images, name, description, links, benefits, tools, technology } =
-    product;
+  const { images, name, description, links, benefits, tools, technology, _id } =
+    product || {};
   return (
     <div>
       <Helmet>
@@ -23,7 +23,7 @@ const Main = ({ product }) => {
         />
         <link
           rel="canonical"
-          href={`https://happy-snyder-173398.netlify.app`}
+          href={`https://happy-snyder-173398.netlify.app/portfolios/${_id}`}
         />
       </Helmet>
       <div className="grid grid-cols-12 gap-6">
