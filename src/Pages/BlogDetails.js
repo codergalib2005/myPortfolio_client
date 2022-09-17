@@ -1,10 +1,30 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { BsArrowUpLeft } from "react-icons/bs";
 import { GiRoundKnob } from "react-icons/gi";
 
 const BlogDetails = () => {
+  let id = 1;
   return (
     <div className="py-10">
+      <Helmet>
+        <title>Asadullah Hil Galib || About</title>
+        <meta
+          name="description"
+          content="Hey There! I'm Asadullah Hil Galib, I am Full stack (MERN) Developer Including ReactJs, NodeJs, ExpressJs, MongoDB, I'm an enthusiastic and
+            detail-oriented, Mern Stack Developer. seeking an entry-level position with
+            the Company to use my skills in coding, troubleshooting complex design, and
+            assisting in the timely completion of projects."
+        />
+        <meta
+          name="keyword"
+          content="portfolio, galib, asadullah hil gailb, my portfolio, web designer, web development, application development, software developer, apps developer, mern developer, frontend developer, full stack developer "
+        />
+        <link
+          rel="canonical"
+          href={`https://happy-snyder-173398.netlify.app/blogd/${id}`}
+        />
+      </Helmet>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <h2 className="text-white text-2xl">Publication title</h2>

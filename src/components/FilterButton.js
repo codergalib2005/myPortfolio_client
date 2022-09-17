@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const keyword = [
   "html",
@@ -19,6 +20,23 @@ const FilterButton = ({ current, setCurrent }) => {
 
   return (
     <div className="w-full flex items-center justify-center mb-8 px-8 flex-wrap">
+      <Helmet>
+        <meta
+          name="description"
+          content="Hey There! I'm Asadullah Hil Galib, I am Full stack (MERN) Developer Including ReactJs, NodeJs, ExpressJs, MongoDB, I'm an enthusiastic and
+            detail-oriented, Mern Stack Developer. seeking an entry-level position with
+            the Company to use my skills in coding, troubleshooting complex design, and
+            assisting in the timely completion of projects."
+        />
+        <meta
+          name="keyword"
+          content="portfolio, galib, asadullah hil gailb, my portfolio, web designer, web development, application development, software developer, apps developer, mern developer, frontend developer, full stack developer "
+        />
+        <link
+          rel="canonical"
+          href={`https://happy-snyder-173398.netlify.app`}
+        />
+      </Helmet>
       <button
         onClick={() => handler("All")}
         className={` py-2 px-5 font-bold smooth border-2  mx-1 mt-2 ${

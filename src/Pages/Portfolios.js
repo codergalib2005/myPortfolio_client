@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import CardLoad from "../components/CardLoad";
 import FilterButton from "../components/FilterButton";
 import PortfolioItem from "../components/PortfolioItem";
@@ -64,14 +65,29 @@ const Portfolios = () => {
           </div>
         );
       }
-      console.log(content);
-      console.log(filterItems.length);
     }
   }
-  console.log(items);
 
   return (
     <div style={{ minHeight: "90vh" }}>
+      <Helmet>
+        <title>Asadullah Hil Galib || Projects</title>
+        <meta
+          name="description"
+          content="Hey There! I'm Asadullah Hil Galib, I am Full stack (MERN) Developer Including ReactJs, NodeJs, ExpressJs, MongoDB, I'm an enthusiastic and
+            detail-oriented, Mern Stack Developer. seeking an entry-level position with
+            the Company to use my skills in coding, troubleshooting complex design, and
+            assisting in the timely completion of projects."
+        />
+        <meta
+          name="keyword"
+          content="portfolio, galib, asadullah hil gailb, my portfolio, web designer, web development, application development, software developer, apps developer, mern developer, frontend developer, full stack developer "
+        />
+        <link
+          rel="canonical"
+          href={`https://happy-snyder-173398.netlify.app/blogd/portfolio`}
+        />
+      </Helmet>
       {/* ===========Buttons=========== */}
       <div className="container mx-auto px-6 py-10">
         <FilterButton current={current} setCurrent={setCurrent} />

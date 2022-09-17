@@ -1,5 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdLocationOn, MdOutlineMailOutline } from "react-icons/md";
 import swal from "sweetalert";
@@ -12,15 +13,29 @@ const contactPageStyle = {
 const Contact = () => {
   const [state, handleSubmit] = useForm("xdojezqa");
   if (state.succeeded) {
-    swal(
-      "Thanks for contract!",
-      "Galib Mail send successfully!!",
-      "success"
-    );
+    swal("Thanks for contract!", "Galib Mail send successfully!!", "success");
   }
 
   return (
     <div style={contactPageStyle}>
+      <Helmet>
+        <title>Asadullah Hil Galib || Contact</title>
+        <meta
+          name="description"
+          content="Hey There! I'm Asadullah Hil Galib, I am Full stack (MERN) Developer Including ReactJs, NodeJs, ExpressJs, MongoDB, I'm an enthusiastic and
+            detail-oriented, Mern Stack Developer. seeking an entry-level position with
+            the Company to use my skills in coding, troubleshooting complex design, and
+            assisting in the timely completion of projects."
+        />
+        <meta
+          name="keyword"
+          content="portfolio, galib, asadullah hil gailb, my portfolio, web designer, web development, application development, software developer, apps developer, mern developer, frontend developer, full stack developer "
+        />
+        <link
+          rel="canonical"
+          href={`https://happy-snyder-173398.netlify.app/contact`}
+        />
+      </Helmet>
       <div className="container py-14 mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           <div className="bg-red-500 hover:bg-red-400 smooth rounded-xl h-48 grid items-center justify-center text-center">

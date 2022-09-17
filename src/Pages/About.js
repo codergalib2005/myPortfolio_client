@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {
   FaFacebookF,
   FaGithubAlt,
@@ -15,6 +16,24 @@ import { position } from "../fakeData/string";
 const About = () => {
   return (
     <div className="pb-20" style={{ minHeight: "90vh" }}>
+      <Helmet>
+        <title>Asadullah Hil Galib || About</title>
+        <meta
+          name="description"
+          content="Hey There! I'm Asadullah Hil Galib, I am Full stack (MERN) Developer Including ReactJs, NodeJs, ExpressJs, MongoDB, I'm an enthusiastic and
+            detail-oriented, Mern Stack Developer. seeking an entry-level position with
+            the Company to use my skills in coding, troubleshooting complex design, and
+            assisting in the timely completion of projects."
+        />
+        <meta
+          name="keyword"
+          content="portfolio, galib, asadullah hil gailb, my portfolio, web designer, web development, application development, software developer, apps developer, mern developer, frontend developer, full stack developer "
+        />
+        <link
+          rel="canonical"
+          href="https://happy-snyder-173398.netlify.app/about"
+        />
+      </Helmet>
       <div className="container text-center px-6">
         <h2 className="text-4xl text-gray-100 hover:text-red-300 transform scale-100 hover:scale-105 smooth px-5 py-8 font-bold text-border">
           About me

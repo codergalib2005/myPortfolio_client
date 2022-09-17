@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import Modal from "react-modal";
 
@@ -52,6 +53,18 @@ const CertificateItem = ({ item }) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
+        <Helmet>
+          <title>{title}</title>
+          <meta name="description" content={`${description}`} />
+          <meta
+            name="keyword"
+            content="portfolio, galib, asadullah hil gailb, my portfolio, web designer, web development, application development, software developer, apps developer, mern developer, frontend developer, full stack developer "
+          />
+          <link
+            rel="canonical"
+            href={`https://happy-snyder-173398.netlify.app`}
+          />
+        </Helmet>
         <div className="bg-dark w-full h-full max-w-md p-6">
           <div className="flex items-center justify-between">
             <div></div>
