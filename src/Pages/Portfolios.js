@@ -50,7 +50,6 @@ const Portfolios = () => {
       const filterItems = items.filter((item) =>
         item.technology.includes(`${current}`)
       );
-      console.log(filterItems);
       if (filterItems.length === 0) {
         content = (
           <Message message="No Project found!" color="gray" deep="400" />
@@ -64,11 +63,8 @@ const Portfolios = () => {
           </div>
         );
       }
-      console.log(content);
-      console.log(filterItems.length);
     }
   }
-  console.log(items);
 
   return (
     <div style={{ minHeight: "90vh" }}>

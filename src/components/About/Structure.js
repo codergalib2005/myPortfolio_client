@@ -13,7 +13,7 @@ const Structure = () => {
   } else if (!isLoading && !isError && data?.data.length === 0) {
     content = null;
   } else if (!isLoading && !isError && data?.data.length > 0) {
-    content = <Skill data={data.data} />;
+    content = <Skill data={data.data} type="structure" />;
   }
   return <div>{content}</div>;
 };

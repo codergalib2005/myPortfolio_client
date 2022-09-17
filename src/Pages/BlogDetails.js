@@ -1,8 +1,13 @@
 import React from "react";
 import { BsArrowUpLeft } from "react-icons/bs";
 import { GiRoundKnob } from "react-icons/gi";
+import { useHistory } from "react-router-dom";
 
 const BlogDetails = () => {
+  const history = useHistory();
+  const handleBack = () => {
+    history.goBack();
+  };
   return (
     <div className="py-10">
       <div className="container mx-auto px-6">
@@ -11,7 +16,10 @@ const BlogDetails = () => {
           <button className="bg-dark text-white py-1 px-3 text-sm font-bold rounded-full">
             Ui Design, Graphic
           </button>
-          <button className="flex items-center text-white hover:text-red-500">
+          <button
+            onClick={handleBack}
+            className="flex items-center text-white hover:text-red-500"
+          >
             <span className="pr-3">
               <BsArrowUpLeft />
             </span>{" "}
