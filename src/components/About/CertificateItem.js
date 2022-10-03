@@ -35,25 +35,30 @@ const CertificateItem = ({ item }) => {
     item || {};
   return (
     <div>
-      <div className="bg-dark p-4 shadow-md relative certificate-card">
-        <img src={image} alt={title} />
-        <div className="absolute top-4 left-4 right-4 bottom-4 bg-overlay flex items-center justify-center flex-col certificate-card-body p-4">
-          <h2 className="font-bold mb-2 text-xl text-center">{title}</h2>
-          <div className="grid grid-cols-2 gap-1">
-            <a
-              href={document}
-              target="_blank"
-              rel="noreferrer"
-              className="bg-red-600 px-4 py-1 border-2 border-red-600 hover:bg-transparent rounded-full text-center"
-            >
-              View
-            </a>
-            <button
-              onClick={openModal}
-              className="bg-red-600 px-4 py-1 border-2 border-red-600 hover:bg-transparent rounded-full text-center"
-            >
-              Details
-            </button>
+      <div className="gradiend-purple shadow-md relative p-4 ">
+        <div
+          className="certificate-card overflow-hidden"
+          style={{ height: "236px" }}
+        >
+          <img className="min-h-full w-full" src={image} alt={title} />
+          <div className="absolute top-4 left-4 right-4 bottom-4 bg-overlay flex items-center justify-center flex-col certificate-card-body p-4">
+            <h2 className="font-bold mb-2 text-xl text-center">{title}</h2>
+            <div className="grid grid-cols-2 gap-1">
+              <a
+                href={document}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-red-600 px-4 py-1 border-2 border-red-600 hover:bg-transparent rounded-full text-center"
+              >
+                View
+              </a>
+              <button
+                onClick={openModal}
+                className="bg-red-600 px-4 py-1 border-2 border-red-600 hover:bg-transparent rounded-full text-center"
+              >
+                Details
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -77,20 +82,20 @@ const CertificateItem = ({ item }) => {
           />
           <link rel="canonical" href={`${image}`} />
         </Helmet>
-        <div className="bg-dark w-full h-full max-w-md p-6">
+        <div className="w-full h-full max-w-md p-6 gradiend-purple-deep ">
           <div className="flex items-center justify-between">
             <h2 className="text-xl text-white">{title}</h2>
-            <button className="text-2xl text-red-500" onClick={closeModal}>
+            <button className="text-2xl text-white" onClick={closeModal}>
               <AiOutlineCloseCircle />
             </button>
           </div>
           <div>
-            <div className="flex items-center justify-between text-white pt-4">
+            <div className="flex items-center justify-between text-white pt-4 ">
               <h3>{industry}</h3>
               <a
                 target="_blank"
                 rel="noreferrer"
-                className="text-red-500 border-b border-red-500"
+                className="text-white border-b border-white"
                 href={industry_link}
               >
                 Details

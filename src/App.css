@@ -73,10 +73,17 @@
 .contentOverlay p {
   transform: scale(1);
   transition: all 0.5s linear;
+  opacity: 0;
+  visibility: hidden;
 }
 .contentOverlay h3:hover,
 .contentOverlay p:hover {
   transform: scale(1.1);
+}
+.contentOverlay:hover h3,
+.contentOverlay:hover p {
+  opacity: 1;
+  visibility: visible;
 }
 .contentOverlay::after {
   content: "";
@@ -88,6 +95,8 @@
   width: 200%;
   transform: rotate(45deg);
   z-index: -1;
+  opacity: 0;
+  visibility: hidden;
 }
 .contentOverlay::before {
   content: "";
@@ -99,14 +108,20 @@
   width: 200%;
   transform: rotate(45deg);
   z-index: -1;
+  opacity: 0;
+  visibility: hidden;
 }
 .folioCard:hover .contentOverlay::before {
   top: 0%;
   right: 0%;
+  opacity: 1;
+  visibility: visible;
 }
 .folioCard:hover .contentOverlay::after {
   left: 0%;
   bottom: 0%;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* ==//////////////////////////== */
@@ -231,4 +246,46 @@
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
+}
+.gradiend-purple {
+  background: -webkit-linear-gradient(
+    90deg,
+    #1b121d 0,
+    #120f2f 50%,
+    #1b121d 100%
+  );
+  background: linear-gradient(
+    90deg,
+    #00f7ff2b 0,
+    #1900ff32 50%,
+    #d000ff29 100%
+  );
+  backdrop-filter: blur(16.1px);
+  -webkit-backdrop-filter: blur(16.1px);
+  box-shadow: rgba(77, 36, 36, 0.25) 0px 54px 55px,
+    rgba(101, 38, 38, 0.12) 0px -12px 30px, rgba(110, 55, 55, 0.12) 0px 4px 6px,
+    rgba(121, 30, 30, 0.17) 0px 12px 13px, rgba(106, 44, 44, 0.09) 0px -3px 5px;
+}
+.gradiend-purple-deep {
+  background: -webkit-linear-gradient(
+    90deg,
+    #1b121d 0,
+    #120f2f 50%,
+    #1b121d 100%
+  );
+  background: linear-gradient(
+    90deg,
+    #00f7ff4e 0,
+    #1900ff4e 50%,
+    #d000ff4c 100%
+  );
+  backdrop-filter: blur(16.1px);
+  -webkit-backdrop-filter: blur(16.1px);
+  box-shadow: rgba(77, 36, 36, 0.25) 0px 54px 55px,
+    rgba(101, 38, 38, 0.12) 0px -12px 30px, rgba(110, 55, 55, 0.12) 0px 4px 6px,
+    rgba(121, 30, 30, 0.17) 0px 12px 13px, rgba(106, 44, 44, 0.09) 0px -3px 5px;
+}
+
+.ReactModal__Overlay {
+  background-color: rgb(0 0 0 / 81%) !important;
 }

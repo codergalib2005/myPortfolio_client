@@ -25,6 +25,8 @@ const openPageStyle = {
   minHeight: "100vh",
   background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${laptopImg}) top left no-repeat`,
   backgroundAttachment: "fixed",
+  backdropFilter: "blur(16.1px)",
+  // -webkit-backdrop-filter: blur(16.1px);
 };
 const App = () => {
   const [openMmenu, setOpenMenu] = useState(false);

@@ -69,67 +69,82 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full">
-          {state.succeeded && (
-            <p className="text-red-50 pt-4">Thanks for joining!</p>
-          )}
-          }
-          <form onSubmit={handleSubmit}>
-            <input
-              autocomplete="off"
-              className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3  font-bold bg-transparent smooth"
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Name"
-            />
-            <ValidationError prefix="Name" field="name" errors={state.errors} />
-            <input
-              autocomplete="off"
-              className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3 mt-3 font-bold bg-transparent smooth"
-              id="email"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-            <input
-              autocomplete="off"
-              className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3 mt-3 font-bold bg-transparent smooth"
-              id="number"
-              type="text"
-              placeholder="Number"
-              name="number"
-            />
-            <ValidationError
-              prefix="Number"
-              field="number"
-              errors={state.errors}
-            />
-            <textarea
-              autocomplete="off"
-              className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3 mt-3 font-bold bg-transparent smooth"
-              id="message"
-              name="message"
-              placeholder="Message"
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <button
-              className="text-red-500 border-2 border-red-500 hover:border-gray-100 hover:bg-gray-100 font-bold  inline-block py-2 px-6"
-              type="submit"
-              disabled={state.submitting}
-            >
-              Submit
-            </button>
-          </form>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 py-6">
+          <div className="w-full order-2 lg:order-1">
+            {state.succeeded && (
+              <p className="text-red-50">Your message send successfully!!</p>
+            )}
+            <form onSubmit={handleSubmit}>
+              <input
+                autocomplete="off"
+                className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3  font-bold bg-transparent smooth"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
+              />
+              <input
+                autocomplete="off"
+                className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3 mt-3 font-bold bg-transparent smooth"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+              <input
+                autocomplete="off"
+                className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3 mt-3 font-bold bg-transparent smooth"
+                id="number"
+                type="text"
+                placeholder="Number"
+                name="number"
+              />
+              <ValidationError
+                prefix="Number"
+                field="number"
+                errors={state.errors}
+              />
+              <textarea
+                autocomplete="off"
+                className="w-full border-2 border-red-500 hover:border-red-300 input-filed py-2 text-gray-300 px-3 mt-3 font-bold bg-transparent smooth"
+                id="message"
+                name="message"
+                placeholder="Message"
+                rows={6}
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+              <button
+                className="text-red-500 border-2 border-red-500 hover:border-gray-100 hover:bg-gray-100 font-bold  inline-block py-2 px-6"
+                type="submit"
+                disabled={state.submitting}
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div className="order-1 lg:order-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4443.302318190179!2d88.81250082138621!3d25.883082048579546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e3585a64884597%3A0x79a8d5ca9753579c!2zMjXCsDUzJzEwLjUiTiA4OMKwNDgnNTcuNCJF!5e1!3m2!1sbn!2sbd!4v1664837589592!5m2!1sbn!2sbd"
+              className="w-full h-400 rounded-lg filter grayscale"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>

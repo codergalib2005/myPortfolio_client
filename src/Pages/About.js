@@ -41,7 +41,7 @@ const About = () => {
       </div>
       <div className="container grid grid-cols-1 md:grid-cols-2 px-6">
         <div
-          className="transition-all duration-300 ease-linear hover:border-red-400 cursor-help flex justify-center filter backdrop-filter backdrop-contrast-50 mx-auto w-full p-6 border-4 border-gray-300 rounded-lg overflow-hidden"
+          className="transition-all duration-300 ease-linear hover:border-red-400 cursor-help flex justify-center filter backdrop-filter backdrop-contrast-50 mx-auto w-full p-6 border-4 border-gray-300 rounded-lg overflow-hidden gradiend-purple"
           style={{ maxWidth: "550px" }}
         >
           <img

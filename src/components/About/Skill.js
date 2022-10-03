@@ -3,7 +3,7 @@ import { GiBeveledStar } from "react-icons/gi";
 
 const Skill = ({ data, type }) => {
   return (
-    <div className="text-white bg-overlay2 mt-4 rounded-md shadow-md p-2 border-4 border-white hover:border-red-500">
+    <div className="text-white bg-overlay2 mt-4 rounded-md shadow-md p-2 border-4 border-white hover:border-red-500 gradiend-purple">
       {type === "design" && (
         <h2 className="text-white text-center text-xl">Design</h2>
       )}
