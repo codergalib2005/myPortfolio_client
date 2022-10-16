@@ -1258,7 +1258,7 @@
     "source-map" "^0.5.7"
     "stylis" "4.0.13"
 
-"@emotion/cache@^11.10.0", "@emotion/cache@^11.10.3":
+"@emotion/cache@^11.10.0":
   "integrity" "sha512-Psmp/7ovAa8appWh3g51goxu/z3iVms7JXOreq136D8Bbn6dYraPnmL6mdM8GThEx9vwSn92Fz+mGSjBzN8UPQ=="
   "resolved" "https://registry.npmjs.org/@emotion/cache/-/cache-11.10.3.tgz"
   "version" "11.10.3"
@@ -9123,6 +9123,7 @@
     "@editorjs/simple-image" "^1.4.1"
     "@editorjs/table" "^2.0.4"
     "@editorjs/warning" "^1.2.0"
+    "@emotion/cache" "^11.10.3"
     "@formspree/react" "^2.2.4"
     "@mantine/core" "^5.5.5"
     "@mantine/hooks" "^5.5.5"
