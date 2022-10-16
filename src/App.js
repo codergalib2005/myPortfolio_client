@@ -4,6 +4,7 @@ import "./App.css";
 import laptopImg from "./assets/laptop.jpg";
 import Dashboard from "./Dashboard";
 import About from "./Pages/About";
+import AddReview from "./Pages/AddReview";
 import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/BlogDetails";
 import Contact from "./Pages/Contact";
@@ -12,6 +13,7 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login";
 import Not from "./Pages/Not";
 import Portfolios from "./Pages/Portfolios";
+import Reviews from "./Pages/Reviews";
 import Services from "./Pages/Services";
 import Header from "./Shared/Header";
 import Menu from "./Shared/Menu";
@@ -94,9 +96,19 @@ const App = () => {
                     <Services />
                   </div>
                 </Route>
+                <Route path="/reviews">
+                  <div className="animationPageOpen">
+                    <Reviews />
+                  </div>
+                </Route>
                 <Route path="/blog">
                   <div className="animationPageOpen">
                     <Blog />
+                  </div>
+                </Route>
+                <Route path="/add_review">
+                  <div className="animationPageOpen">
+                    <AddReview />
                   </div>
                 </Route>
                 <Route path="/blogd/:blogId">
