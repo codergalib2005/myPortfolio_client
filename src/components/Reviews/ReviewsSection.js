@@ -25,12 +25,13 @@ const data = [
         <br/>
         <br/>
         <br/>
-        We hope that this recommendation letter will help you to always look back at those 2 months and inspire you to work hard so that you can overcome any challenges with the highest confidence. 
+        We hope that this <a href="https://drive.google.com/file/d/12hB7JecQ1Ek2nr1kLDPj62O2T6LxoPhj/view?usp=sharing" class="text-red-600 font-bold"><strong>recommendation letter</strong></a>  will help you to always look back at those 2 months and inspire you to work hard so that you can overcome any challenges with the highest confidence. 
         <br/>
         <br/>
         <br/>
         Best wishes for your future adventure.
         <br/>
+        <a href="https://drive.google.com/file/d/12hB7JecQ1Ek2nr1kLDPj62O2T6LxoPhj/view?usp=sharing" class="text-red-600 font-bold"><strong>View letter</strong></a>
         <br/>
         <br/>
         Kind Regards,
